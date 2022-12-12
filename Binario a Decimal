@@ -1,0 +1,10 @@
+numero_binario = '1010'
+
+posicion = len(numero_binario) - 1 #posición del primer dígito por la izquierda
+print("¿Cómo se llama?")
+nombre = input()
+print(f"Me alegro de conocerle, {nombre}")
+for digito_string in numero_binario:
+	digito = int(digito_string)
+	print(f'Dígito: {digito}, posición: {posicion}')
+	posicion -= 1 # restamos 1 a la posición
